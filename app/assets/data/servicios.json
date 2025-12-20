@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Indiba",
+    "description": "Tratamiento de radiofrecuencia regenerativa que reafirma la piel y reduce la grasa localizada desde el interior.",
+    "imageSrc": "/img/servicios/indiba.jpg"
+  },
+  {
+    "title": "Fotorejuvenecimiento",
+    "description": "Tratamiento avanzado con luz pulsada para eliminar manchas, rojeces y estimular el colágeno natural de la piel.",
+    "imageSrc": "/img/servicios/fotorejuvenecimiento.jpg"
+  },
+  {
+    "title": "Fotodepilación",
+    "description": "Eliminación del vello de forma duradera y eficaz mediante tecnología de luz de última generación.",
+    "imageSrc": "/img/servicios/fotodepilacion.jpg"
+  },
+  {
+    "title": "Cavitación",
+    "description": "Técnica no invasiva para modelar la figura y reducir la grasa localizada mediante ultrasonidos de baja frecuencia.",
+    "imageSrc": "/img/servicios/cavitacion.jpg"
+  },
+  {
+    "title": "Electroestimulación",
+    "description": "Tonificación muscular profunda y drenaje linfático mediante impulsos eléctricos controlados.",
+    "imageSrc": "/img/servicios/electroestimulacion.png"
+  },
+  {
+    "title": "Presoterapia",
+    "description": "Masaje de compresión neumática que mejora la circulación y ayuda a la eliminación de toxinas y celulitis.",
+    "imageSrc": "/img/servicios/presoterapia.png"
+  },
+  {
+    "title": "Equipo L.E.D.",
+    "description": "Terapia de luz bio-estimulante para tratar el acné, calmar la piel y acelerar la regeneración celular.",
+    "imageSrc": "/img/servicios/equipo-led.jpg"
+  },
+  {
+    "title": "Solarium",
+    "description": "Bronceado seguro y controlado para lucir un tono dorado y saludable durante todo el año.",
+    "imageSrc": "/img/servicios/solarium.jpg"
+  },
+  {
+    "title": "Tratamiento facial y corporal",
+    "description": "Rituales personalizados que combinan activos de alta cosmética con técnicas manuales exclusivas.",
+    "imageSrc": "/img/servicios/tratamientos-combinados.jpg"
+  },
+  {
+    "title": "Manicura",
+    "description": "Cuidado experto de manos y uñas con las últimas tendencias en esmaltado y máxima higiene.",
+    "imageSrc": "/img/servicios/manicura.png"
+  },
+  {
+    "title": "Pedicura",
+    "description": "Tratamiento completo para pies que incluye exfoliación, hidratación profunda y esmaltado profesional.",
+    "imageSrc": "/img/servicios/pedicura.jpg"
+  },
+  {
+    "title": "Maquillaje",
+    "description": "Servicios de maquillaje para eventos, novias y asesoría de imagen personalizada.",
+    "imageSrc": "/img/servicios/maquillaje.jpg"
+  }
+]
