@@ -7,7 +7,7 @@ const isMenuOpen = ref(false);
 const navLinks = [
   { name: "Inicio", path: "/" },
   { name: "Servicios", path: "/servicios" },
-  { name: "Sobre nosotros", path: "/sobre-nosotros" },
+  { name: "Sobre nosotros", path: "/nosotros" },
   { name: "Contacto", path: "/contacto" },
 ];
 
