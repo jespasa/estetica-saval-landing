@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   ssr: true,
   app: {
     // Reemplaza 'nombre-repo' por el nombre de tu repositorio en GitHub
-    baseURL: "/estetica-saval-landing/",
+    baseURL: "/jespasa/estetica-saval-landing/",
     buildAssetsDir: "assets", // Evita problemas con carpetas que empiezan por guion bajo en GitHub Pages
   },
 
