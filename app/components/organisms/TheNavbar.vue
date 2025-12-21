@@ -26,7 +26,7 @@ const toggleMenu = () => {
             class="flex items-center gap-2"
             @click="isMenuOpen = false">
             <NuxtImg
-              src="/logo.png"
+              src="/logo_white.png"
               alt="Estética Saval"
               class="h-10 md:h-12 w-auto" />
             <span class="text-lg md:text-xl font-bold text-brand-primary"
