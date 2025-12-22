@@ -5,10 +5,11 @@
       <NuxtImg
         src="/img/hero_img.png"
         alt="Estética Saval"
-        class="w-full h-full object-cover object-[70%_30%] md:object-center transform scale-105"
+        class="w-full h-full object-cover object-[85%_center] md:object-center"
         fetchpriority="high" />
+      <div class="absolute inset-0 bg-white/40 md:bg-transparent"></div>
       <div
-        class="absolute inset-0 bg-gradient-to-r from-white/90 via-white/40 to-transparent lg:from-white/80"></div>
+        class="absolute inset-0 bg-gradient-to-b from-white/80 via-white/40 to-white/10 md:bg-gradient-to-r md:from-white/95 md:via-white/60 md:to-transparent"></div>
     </div>
 
     <div class="relative z-20 max-w-4xl w-full">
@@ -61,13 +62,6 @@
           </NuxtLink>
         </div>
       </div>
-    </div>
-
-    <div
-      class="absolute bottom-[1.5rem] md:bottom-10 left-1/2 -translate-x-1/2 md:left-20 md:translate-x-0 flex items-center gap-3 text-brand-muted/60 text-xs tracking-widest uppercase vertical-rl">
-      <span
-        class="w-px h-12 bg-gradient-to-b from-brand-primary/50 to-transparent"></span>
-      Scroll
     </div>
   </header>
 </template>
