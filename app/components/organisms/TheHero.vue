@@ -4,6 +4,7 @@
     <div class="absolute inset-0 z-0">
       <NuxtImg
         src="/img/hero_img.png"
+        format="webp"
         alt="Estética Saval"
         class="w-full h-full object-cover object-[85%_center] md:object-center"
         fetchpriority="high" />

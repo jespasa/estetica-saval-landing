@@ -36,7 +36,8 @@ watch(isMenuOpen, (val) => {
             <NuxtImg
               src="/logo_white.png"
               alt="Estética Saval"
-              class="h-10 md:h-12 w-auto" />
+              class="h-10 md:h-12 w-auto"
+              format="webp" />
             <span class="text-lg md:text-xl font-bold text-brand-primary">
               Estética Saval
             </span>
