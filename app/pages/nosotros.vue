@@ -107,7 +107,7 @@ const valores = [
     <section
       class="py-24 bg-brand-dark text-center text-white relative overflow-hidden">
       <div
-        class="absolute top-0 left-0 w-full h-full bg-pattern opacity-5"></div>
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-brand-secondary/30 to-transparent"></div>
       <h2 class="font-display text-4xl mb-10 italic relative z-10">
         ¿Quieres conocernos en persona?
       </h2>
