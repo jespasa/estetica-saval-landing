@@ -119,9 +119,3 @@ const valores = [
     </section>
   </div>
 </template>
-
-<style scoped>
-.font-display {
-  font-family: "Playfair Display", serif;
-}
-</style>

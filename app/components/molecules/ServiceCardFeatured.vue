@@ -39,10 +39,3 @@ defineProps<Props>();
     </div>
   </div>
 </template>
-
-<style scoped>
-/* Aplicamos la tipografía elegante de tu configuración */
-.font-display {
-  font-family: "Playfair Display", serif;
-}
-</style>

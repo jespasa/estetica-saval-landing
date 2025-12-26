@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/fonts": "^0.12.1",
     "@nuxt/icon": "^2.1.1",
     "@nuxt/image": "^2.0.0",
     "@nuxtjs/sitemap": "^7.5.0",

@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "nuxt-site-config",
     "@nuxtjs/sitemap",
+    "@nuxt/fonts",
   ],
 
   // 3. Configuración del Sitio (SEO Global)
@@ -66,6 +67,15 @@ export default defineNuxtConfig({
 
   // 8. Reglas de Rutas
   routeRules: {
-    // Aquí puedes añadir: '/admin/**': { robots: false }
+    "/img/**": {
+      headers: { "cache-control": "public, max-age=31536000, immutable" },
+    },
+  },
+  // 9. Configuración de Fuentes
+  fonts: {
+    families: [
+      { name: "Inter", weights: [400, 600] },
+      { name: "Playfair Display", weights: [700], styles: ["normal"] },
+    ],
   },
 });
