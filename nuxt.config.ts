@@ -32,6 +32,14 @@ export default defineNuxtConfig({
     baseURL: "/estetica-saval-landing/",
     buildAssetsDir: "assets",
     head: {
+      title: "Estética Saval",
+      meta: [
+        {
+          name: "description",
+          content:
+            "Centro de estética avanzada en Callosa d'en Sarrià. Especialistas en tratamientos faciales y corporales.",
+        },
+      ],
       htmlAttrs: {
         lang: "es",
       },
