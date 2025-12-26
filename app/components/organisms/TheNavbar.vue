@@ -34,7 +34,7 @@ watch(isMenuOpen, (val) => {
             class="flex items-center gap-2"
             @click="isMenuOpen = false">
             <NuxtImg
-              src="/logo_white.png"
+              src="/logo_white.webp"
               alt="Estética Saval"
               class="h-10 md:h-12 w-auto"
               format="webp" />

@@ -3,7 +3,7 @@
     class="relative min-h-[calc(100vh-5rem)] flex items-center overflow-hidden px-6 lg:px-20 bg-estetica-soft">
     <div class="absolute inset-0 z-0">
       <NuxtImg
-        src="/img/hero_img.png"
+        src="/img/hero_img.webp"
         format="webp"
         alt="Estética Saval"
         class="w-full h-full object-cover object-[85%_center] md:object-center"

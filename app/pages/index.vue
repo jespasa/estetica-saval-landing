@@ -8,48 +8,6 @@ const destacados = serviciosData.slice(0, 4);
 <template>
   <div class="bg-estetica-soft min-h-screen font-sans text-brand-dark">
     <TheHero />
-    <!-- <header
-      class="relative min-h-screen flex items-center overflow-hidden px-6 lg:px-20">
-      <div class="absolute inset-0 z-10">
-        <NuxtImg
-          src="/img/hero_img.png"
-          alt="Estética Saval"
-          class="w-full h-full object-cover object-[center_right] md:object-center" />
-        <div
-          class="absolute inset-0 bg-gradient-to-r from-white/70 via-white/30 to-transparent"></div>
-      </div>
-
-      <div class="relative max-w-3xl text-center md:text-left">
-        <span
-          class="text-brand-primary font-semibold tracking-[0.3em] uppercase mb-4 block">
-          Bienvenida a
-        </span>
-        <h1
-          class="font-display text-5xl md:text-8xl text-brand-dark mb-6 leading-tight">
-          Estética
-          <span class="italic font-normal text-brand-primary">Saval</span>
-        </h1>
-        <p
-          class="max-w-lg mx-auto md:mx-0 text-brand-muted text-lg md:text-xl mb-10 leading-relaxed">
-          Tu refugio de bienestar y belleza. Especialistas en tratamientos
-          faciales y corporales de alta gama.
-        </p>
-        <div
-          class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-          <NuxtLink
-            to="/contacto"
-            class="bg-brand-primary text-white px-10 py-4 rounded-full font-bold shadow-lg hover:bg-brand-dark transition-all transform hover:-translate-y-1 text-center">
-            Reserva tu cita
-          </NuxtLink>
-          <NuxtLink
-            to="/servicios"
-            class="border-2 border-brand-accent text-brand-primary px-10 py-4 rounded-full font-bold hover:bg-brand-accent/10 transition-all text-center">
-            Ver servicios
-          </NuxtLink>
-        </div>
-      </div>
-    </header> -->
-
     <section class="py-24 px-4 max-w-7xl mx-auto">
       <div class="text-center mb-16">
         <h2 class="font-display text-4xl md:text-5xl text-brand-dark mb-4">

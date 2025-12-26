@@ -46,7 +46,7 @@ const valores = [
         <div
           class="absolute -top-4 -left-4 w-full h-full border-2 border-brand-secondary rounded-[2.5rem] -z-10"></div>
         <NuxtImg
-          src="/img/equipo/indiba-Estetica-Saval.jpg"
+          src="/img/equipo/indiba-Estetica-Saval.webp"
           alt="Tecnología Indiba en Saval"
           class="relative z-10 rounded-[2.5rem] shadow-2xl w-full object-cover h-[550px]"
           format="webp" />

@@ -15,7 +15,7 @@ export const useAppSEO = (
   const seoDesc =
     description ||
     "Tu refugio de bienestar y belleza. Especialistas en tratamientos faciales y corporales.";
-  const seoImg = image ? `${siteUrl}${image}` : `${siteUrl}/logo_white.png`;
+  const seoImg = image ? `${siteUrl}${image}` : `${siteUrl}/logo_white.webp`;
 
   useSeoMeta({
     title: seoTitle,

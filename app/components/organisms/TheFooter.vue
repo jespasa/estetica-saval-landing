@@ -3,7 +3,10 @@
     <div class="max-w-7xl mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
         <div class="space-y-4">
-          <img src="/logo_white.png" alt="Estética Saval" class="h-16 w-auto" />
+          <img
+            src="/logo_white.webp"
+            alt="Estética Saval"
+            class="h-16 w-auto" />
           <p class="text-sm leading-relaxed opacity-80">
             Tu refugio de bienestar y belleza. Especialistas en tratamientos
             faciales y corporales de alta gama.
