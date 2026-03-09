@@ -23,9 +23,9 @@ export default defineNuxtConfig({
   // 3. Configuración del Sitio (SEO Global)
   // IMPORTANTE: La URL debe coincidir con donde está alojada la web realmente
   site: {
-    url: "https://jespasa.github.io/estetica-saval-landing",
+    url: "https://estetica-saval-landing.vercel.app",
     name: "Estética Saval",
-    trailingSlash: true, // Recomendado para GitHub Pages
+    trailingSlash: true,
   },
 
   // 4. Configuración de la App (GitHub Pages)
@@ -53,7 +53,7 @@ export default defineNuxtConfig({
   // 6. Variables de Entorno Públicas
   runtimeConfig: {
     public: {
-      siteUrl: "https://jespasa.github.io/estetica-saval-landing",
+      siteUrl: "https://estetica-saval-landing.vercel.app",
     },
   },
 

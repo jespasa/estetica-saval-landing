@@ -4,16 +4,18 @@ defineProps<{
   title: string;
   description?: string; // Opcional
   imageSrc?: string; // Opcional
+  slug?: string; // Slug para enlace SEO
 }>();
 </script>
 
 <template>
-  <div
+  <NuxtLink
+    :to="slug ? `/servicios/${slug}` : '/servicios'"
     class="group p-6 bg-white rounded-2xl shadow-sm border border-brand-secondary/20 hover:border-brand-primary/50 transition-all duration-300 hover:-translate-y-1 text-center flex flex-col items-center">
     <div v-if="imageSrc" class="mb-4 w-full h-48 overflow-hidden rounded-xl">
       <NuxtImg
         :src="imageSrc"
-        :alt="title"
+        :alt="`${title} - Tratamiento estética Callosa d'en Sarrià`"
         loading="lazy"
         format="webp"
         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
@@ -36,5 +38,13 @@ defineProps<{
     <p v-if="description" class="mt-4 text-sm text-brand-muted leading-relaxed">
       {{ description }}
     </p>
-  </div>
+
+    <span
+      class="mt-4 text-brand-primary font-semibold text-xs tracking-widest uppercase inline-flex items-center gap-1">
+      Ver más
+      <Icon
+        name="heroicons:arrow-right"
+        class="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+    </span>
+  </NuxtLink>
 </template>

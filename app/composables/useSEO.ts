@@ -1,13 +1,14 @@
 export const useAppSEO = (
   title?: string,
   description?: string,
-  image?: string
+  image?: string,
 ) => {
   const config = useRuntimeConfig();
   const route = useRoute();
 
-  // URL base de tu sitio (configúrala en nuxt.config o hardcodeada)
-  const siteUrl = "https://jespasa.github.io/estetica-saval-landing";
+  // URL base de tu sitio (usa la configuración de runtimeConfig)
+  const siteUrl =
+    config.public.siteUrl || "https://estetica-saval-landing.vercel.app";
 
   const seoTitle = title
     ? `${title} | Estética Saval`

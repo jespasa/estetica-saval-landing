@@ -70,7 +70,8 @@
           </p>
           <div class="flex space-x-4">
             <a
-              href="#"
+              href="https://wa.me/34617514052"
+              target="_blank"
               class="text-brand-secondary hover:text-brand-primary transition-colors text-xl">
               <span class="sr-only">WhatsApp</span>
               <Icon name="ph:whatsapp-logo-fill" class="text-2xl" />
@@ -83,7 +84,8 @@
               <Icon name="ph:facebook-logo-fill" class="text-2xl" />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/centroesteticasaval/"
+              target="_blank"
               class="text-brand-secondary hover:text-brand-primary transition-colors text-xl">
               <span class="sr-only">Instagram</span>
               <Icon name="ph:instagram-logo-fill" class="text-2xl" />

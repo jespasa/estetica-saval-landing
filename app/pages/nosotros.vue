@@ -1,6 +1,21 @@
 <script setup lang="ts">
-// Asumimos que ValueCard es tu componente molecular previo
 import ValueCard from "~/components/molecules/ValueCard.vue";
+
+// SEO optimizado para página Sobre Nosotros
+useAppSEO(
+  "Sobre Nosotros - Filosofía y Valores",
+  "Conoce Estética Saval: desde 2015 cuidando de ti en Callosa d'en Sarrià. Innovación, cercanía y excelencia en tratamientos estéticos de alta gama.",
+  "/img/equipo/indiba-Estetica-Saval.webp",
+);
+
+// Breadcrumbs
+const { getBreadcrumbSchema, injectSchema } = useSchemaOrg();
+injectSchema(
+  getBreadcrumbSchema([
+    { name: "Inicio", url: "/" },
+    { name: "Sobre Nosotros", url: "/nosotros" },
+  ]),
+);
 
 const valores = [
   {

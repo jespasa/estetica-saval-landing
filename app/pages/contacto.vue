@@ -2,6 +2,22 @@
 import ContactForm from "@/components/molecules/ContactForm.vue";
 import ContactMap from "@/components/molecules/ContactMap.vue";
 import ContactInfoCard from "@/components/molecules/ContactInfoCard.vue";
+
+// SEO optimizado para página de contacto
+useAppSEO(
+  "Contacto y Reserva de Cita",
+  "Reserva tu cita en Estética Saval. C/ Rafael Couchoud 10, Callosa d'en Sarrià. Tel: 965 88 17 33. Horario: Lun-Vie 10-20h, Sáb 9-14h. Diagnóstico gratuito.",
+  "/img/hero_img.webp",
+);
+
+// Breadcrumbs
+const { getBreadcrumbSchema, injectSchema } = useSchemaOrg();
+injectSchema(
+  getBreadcrumbSchema([
+    { name: "Inicio", url: "/" },
+    { name: "Contacto", url: "/contacto" },
+  ]),
+);
 </script>
 <template>
   <div class="bg-estetica-soft min-h-screen">

@@ -2,7 +2,19 @@
 import TheHero from "@/components/organisms/TheHero.vue";
 import serviciosData from "~/assets/data/servicios.json";
 import ServiceCardFeatured from "@/components/molecules/ServiceCardFeatured.vue";
+
 const destacados = serviciosData.slice(0, 4);
+
+// SEO optimizado para página principal
+useAppSEO(
+  "Centro de Estética Avanzada en Callosa d'en Sarrià",
+  "Centro de estética en Callosa d'en Sarrià, Alicante. Especialistas en Indiba, fotodepilación, tratamientos faciales y corporales. Reserva tu cita. ☆ Tecnología de vanguardia.",
+  "/img/hero_img.webp",
+);
+
+// Breadcrumbs para página principal
+const { getBreadcrumbSchema, injectSchema } = useSchemaOrg();
+injectSchema(getBreadcrumbSchema([{ name: "Inicio", url: "/" }]));
 </script>
 
 <template>
@@ -18,10 +30,11 @@ const destacados = serviciosData.slice(0, 4);
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
         <ServiceCardFeatured
           v-for="servicio in destacados"
-          :key="servicio.title"
+          :key="servicio.slug"
           :title="servicio.title"
           :description="servicio.description"
-          :image-src="servicio.imageSrc" />
+          :image-src="servicio.imageSrc"
+          :slug="servicio.slug" />
       </div>
 
       <div class="mt-16 text-center">

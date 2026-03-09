@@ -1,62 +1,170 @@
 [
   {
+    "slug": "indiba",
     "title": "Indiba",
     "description": "Tratamiento de radiofrecuencia regenerativa que reafirma la piel y reduce la grasa localizada desde el interior.",
+    "longDescription": "Indiba es la tecnología de radiofrecuencia más avanzada del mercado. Mediante ondas de radio de alta frecuencia (448 kHz), estimula la regeneración celular desde el interior, logrando resultados visibles desde la primera sesión. Ideal para reafirmar la piel, reducir la celulitis y modelar la figura de forma no invasiva.",
+    "benefits": [
+      "Reafirmación cutánea",
+      "Reducción de grasa localizada",
+      "Mejora de la celulitis",
+      "Estimulación del colágeno",
+      "Resultados desde la 1ª sesión"
+    ],
     "imageSrc": "/img/servicios/indiba.webp"
   },
   {
+    "slug": "fotorejuvenecimiento",
     "title": "Fotorejuvenecimiento",
     "description": "Tratamiento avanzado con luz pulsada para eliminar manchas, rojeces y estimular el colágeno natural de la piel.",
+    "longDescription": "El fotorejuvenecimiento con luz pulsada intensa (IPL) es un tratamiento no invasivo que mejora la textura y el tono de la piel. Actúa sobre manchas solares, rojeces, poros dilatados y arrugas finas, estimulando la producción natural de colágeno para una piel más joven y luminosa.",
+    "benefits": [
+      "Eliminación de manchas",
+      "Reducción de rojeces",
+      "Mejora de textura",
+      "Estimulación de colágeno",
+      "Piel más luminosa"
+    ],
     "imageSrc": "/img/servicios/fotorejuvenecimiento.webp"
   },
   {
+    "slug": "fotodepilacion",
     "title": "Fotodepilación",
     "description": "Eliminación del vello de forma duradera y eficaz mediante tecnología de luz de última generación.",
+    "longDescription": "La fotodepilación es el método más eficaz para eliminar el vello de forma permanente. Utilizamos tecnología de luz pulsada de última generación que destruye el folículo piloso sin dañar la piel circundante. Apto para todo tipo de pieles y zonas del cuerpo.",
+    "benefits": [
+      "Eliminación permanente",
+      "Sin dolor",
+      "Todas las zonas",
+      "Piel suave",
+      "Sesiones rápidas"
+    ],
     "imageSrc": "/img/servicios/fotodepilacion.webp"
   },
   {
+    "slug": "cavitacion",
     "title": "Cavitación",
     "description": "Técnica no invasiva para modelar la figura y reducir la grasa localizada mediante ultrasonidos de baja frecuencia.",
+    "longDescription": "La cavitación ultrasónica es una técnica revolucionaria para eliminar la grasa localizada sin cirugía. Los ultrasonidos de baja frecuencia generan microburbujas que rompen las células grasas, facilitando su eliminación natural por el organismo. Ideal para abdomen, muslos, brazos y cartucheras.",
+    "benefits": [
+      "Sin cirugía",
+      "Reduce grasa localizada",
+      "Modelado corporal",
+      "Sin recuperación",
+      "Resultados medibles"
+    ],
     "imageSrc": "/img/servicios/cavitacion.webp"
   },
   {
+    "slug": "electroestimulacion",
     "title": "Electroestimulación",
     "description": "Tonificación muscular profunda y drenaje linfático mediante impulsos eléctricos controlados.",
+    "longDescription": "La electroestimulación muscular utiliza impulsos eléctricos de baja intensidad para provocar contracciones musculares profundas. Ideal para tonificar, drenar líquidos y mejorar la circulación. Complemento perfecto para tratamientos reductores y anticelulíticos.",
+    "benefits": [
+      "Tonificación muscular",
+      "Drenaje linfático",
+      "Mejora circulación",
+      "Reduce retención",
+      "Complemento reductor"
+    ],
     "imageSrc": "/img/servicios/electroestimulacion.webp"
   },
   {
+    "slug": "presoterapia",
     "title": "Presoterapia",
     "description": "Masaje de compresión neumática que mejora la circulación y ayuda a la eliminación de toxinas y celulitis.",
+    "longDescription": "La presoterapia es un tratamiento de drenaje linfático mecánico mediante presión de aire secuencial. Ideal para piernas cansadas, retención de líquidos, celulitis y mala circulación. Produce una sensación de ligereza inmediata y ayuda a eliminar toxinas del organismo.",
+    "benefits": [
+      "Piernas ligeras",
+      "Elimina toxinas",
+      "Reduce celulitis",
+      "Mejora circulación",
+      "Efecto relajante"
+    ],
     "imageSrc": "/img/servicios/presoterapia.webp"
   },
   {
+    "slug": "terapia-led",
     "title": "Equipo L.E.D.",
     "description": "Terapia de luz bio-estimulante para tratar el acné, calmar la piel y acelerar la regeneración celular.",
+    "longDescription": "La terapia LED utiliza diferentes longitudes de onda de luz para tratar diversas afecciones cutáneas. La luz azul elimina bacterias del acné, la roja estimula el colágeno y la infrarroja acelera la cicatrización. Tratamiento indoloro y sin efectos secundarios.",
+    "benefits": [
+      "Tratamiento acné",
+      "Calma la piel",
+      "Regeneración celular",
+      "Sin efectos secundarios",
+      "Indoloro"
+    ],
     "imageSrc": "/img/servicios/equipo-led.webp"
   },
   {
+    "slug": "solarium",
     "title": "Solarium",
     "description": "Bronceado seguro y controlado para lucir un tono dorado y saludable durante todo el año.",
+    "longDescription": "Nuestro solarium de última generación ofrece un bronceado uniforme y controlado con filtros UV de máxima seguridad. Ideal para preparar la piel antes del verano o mantener un tono dorado durante todo el año. Sesiones personalizadas según tu fototipo.",
+    "benefits": [
+      "Bronceado uniforme",
+      "Seguridad UV",
+      "Todo el año",
+      "Sesiones personalizadas",
+      "Vitamina D"
+    ],
     "imageSrc": "/img/servicios/solarium.webp"
   },
   {
+    "slug": "tratamientos-faciales-corporales",
     "title": "Tratamiento facial y corporal",
     "description": "Rituales personalizados que combinan activos de alta cosmética con técnicas manuales exclusivas.",
+    "longDescription": "Ofrecemos rituales faciales y corporales completamente personalizados según las necesidades de tu piel. Utilizamos cosmética de alta gama y técnicas manuales exclusivas para limpiar, nutrir, hidratar y rejuvenecer. Cada tratamiento incluye diagnóstico previo gratuito.",
+    "benefits": [
+      "Personalizado",
+      "Alta cosmética",
+      "Diagnóstico incluido",
+      "Técnicas exclusivas",
+      "Resultados visibles"
+    ],
     "imageSrc": "/img/servicios/tratamientos-combinados.webp"
   },
   {
+    "slug": "manicura",
     "title": "Manicura",
     "description": "Cuidado experto de manos y uñas con las últimas tendencias en esmaltado y máxima higiene.",
+    "longDescription": "Servicio completo de manicura que incluye limado, cutículas, hidratación y esmaltado. Trabajamos con esmaltes de larga duración, semipermanentes y las últimas tendencias en nail art. Máxima higiene y esterilización de todos los utensilios.",
+    "benefits": [
+      "Esmaltado profesional",
+      "Semipermanente",
+      "Nail art",
+      "Máxima higiene",
+      "Hidratación"
+    ],
     "imageSrc": "/img/servicios/manicura.webp"
   },
   {
+    "slug": "pedicura",
     "title": "Pedicura",
     "description": "Tratamiento completo para pies que incluye exfoliación, hidratación profunda y esmaltado profesional.",
+    "longDescription": "Pedicura completa que cuida la salud y estética de tus pies. Incluye baño relajante, exfoliación, eliminación de durezas, corte y limado de uñas, hidratación profunda y esmaltado. Ideal para pies cansados y descuidados.",
+    "benefits": [
+      "Elimina durezas",
+      "Hidratación profunda",
+      "Esmaltado",
+      "Pies relajados",
+      "Salud podal"
+    ],
     "imageSrc": "/img/servicios/pedicura.webp"
   },
   {
+    "slug": "maquillaje",
     "title": "Maquillaje",
     "description": "Servicios de maquillaje para eventos, novias y asesoría de imagen personalizada.",
+    "longDescription": "Servicio profesional de maquillaje para todo tipo de eventos: bodas, comuniones, graduaciones, sesiones fotográficas y más. Ofrecemos también asesoría de imagen personalizada para que aprendas a sacar el máximo partido a tu rostro con técnicas profesionales.",
+    "benefits": [
+      "Maquillaje novias",
+      "Eventos especiales",
+      "Asesoría imagen",
+      "Productos premium",
+      "Larga duración"
+    ],
     "imageSrc": "/img/servicios/maquillaje.webp"
   }
 ]

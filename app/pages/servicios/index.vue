@@ -1,6 +1,22 @@
 <script setup lang="ts">
 import ServiceCard from "@/components/molecules/ServiceCard.vue";
 import serviciosData from "~/assets/data/servicios.json";
+
+// SEO optimizado para página de servicios
+useAppSEO(
+  "Tratamientos de Estética Facial y Corporal",
+  "Descubre nuestros tratamientos: Indiba, fotodepilación, fotorejuvenecimiento, cavitación, presoterapia y más. Centro estética Callosa d'en Sarrià, Marina Baixa.",
+  "/img/servicios/indiba.webp",
+);
+
+// Breadcrumbs
+const { getBreadcrumbSchema, injectSchema } = useSchemaOrg();
+injectSchema(
+  getBreadcrumbSchema([
+    { name: "Inicio", url: "/" },
+    { name: "Servicios", url: "/servicios" },
+  ]),
+);
 </script>
 
 <template>
@@ -23,10 +39,11 @@ import serviciosData from "~/assets/data/servicios.json";
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <ServiceCard
           v-for="servicio in serviciosData"
-          :key="servicio.title"
+          :key="servicio.slug"
           :title="servicio.title"
           :description="servicio.description"
-          :imageSrc="servicio.imageSrc" />
+          :imageSrc="servicio.imageSrc"
+          :slug="servicio.slug" />
       </div>
     </section>
 

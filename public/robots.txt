@@ -1,2 +1,23 @@
+# Robots.txt para Estética Saval
+# https://estetica-saval-landing.vercel.app
+
+# Permitir acceso a todos los bots
 User-Agent: *
-Disallow:
+Allow: /
+
+# Bloquear carpetas internas (si las hubiera)
+Disallow: /_nuxt/builds/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://estetica-saval-landing.vercel.app/sitemap.xml
+
+# Reglas específicas para Googlebot
+User-Agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Reglas para Bingbot
+User-Agent: Bingbot
+Allow: /
+Crawl-delay: 2
