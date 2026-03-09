@@ -8,7 +8,6 @@ const isServiciosOpen = ref(false);
 const isServiciosMobileOpen = ref(false);
 
 const navLinks = [
-  { name: "Inicio", path: "/" },
   { name: "Sobre nosotros", path: "/nosotros" },
   { name: "Contacto", path: "/contacto" },
 ];
