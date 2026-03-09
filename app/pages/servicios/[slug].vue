@@ -56,17 +56,19 @@ injectSchema([
         loading="eager" />
       <div
         class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/40 to-transparent"></div>
-      <div class="absolute bottom-0 left-0 right-0 p-8 md:p-16">
+      <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-8 md:p-16">
         <div class="max-w-4xl mx-auto">
           <NuxtLink
             to="/servicios"
-            class="inline-flex items-center gap-2 text-brand-secondary hover:text-white transition-colors mb-4">
+            class="inline-flex items-center gap-2 text-brand-secondary hover:text-white transition-colors mb-3 sm:mb-4">
             <Icon name="heroicons:arrow-left" class="w-4 h-4" />
-            <span class="text-sm uppercase tracking-widest"
+            <span class="text-xs sm:text-sm uppercase tracking-widest"
               >Volver a servicios</span
             >
           </NuxtLink>
-          <h1 class="font-display text-4xl md:text-6xl text-white">
+          <h1
+            class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white break-words hyphens-auto"
+            lang="es">
             {{ servicio.title }}
           </h1>
         </div>
