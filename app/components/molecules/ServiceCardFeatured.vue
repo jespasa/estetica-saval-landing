@@ -10,8 +10,9 @@ defineProps<Props>();
 </script>
 
 <template>
-  <div
-    class="group bg-white p-6 md:p-8 rounded-[2.5rem] flex flex-col sm:flex-row items-center gap-8 shadow-sm hover:shadow-xl transition-all duration-500 border border-brand-secondary/20">
+  <NuxtLink
+    :to="slug ? `/servicios/${slug}` : '/servicios'"
+    class="group bg-white p-6 md:p-8 rounded-[2.5rem] flex flex-col sm:flex-row items-center gap-8 shadow-sm hover:shadow-xl transition-all duration-500 border border-brand-secondary/20 cursor-pointer">
     <div
       class="w-44 h-44 flex-shrink-0 rounded-full overflow-hidden border-4 border-estetica-pink shadow-inner bg-brand-secondary/10">
       <NuxtImg
@@ -31,12 +32,13 @@ defineProps<Props>();
         class="text-brand-muted text-sm md:text-base leading-relaxed mb-6 line-clamp-3">
         {{ description }}
       </p>
-      <NuxtLink
-        :to="slug ? `/servicios/${slug}` : '/servicios'"
-        class="text-brand-primary font-bold text-xs tracking-[0.2em] uppercase hover:text-brand-dark transition-colors inline-flex items-center gap-2">
+      <span
+        class="text-brand-primary font-bold text-xs tracking-[0.2em] uppercase group-hover:text-brand-dark transition-colors inline-flex items-center gap-2">
         Descubrir tratamiento
-        <Icon name="heroicons:arrow-right-20-solid" class="w-4 h-4" />
-      </NuxtLink>
+        <Icon
+          name="heroicons:arrow-right-20-solid"
+          class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+      </span>
     </div>
-  </div>
+  </NuxtLink>
 </template>
