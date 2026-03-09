@@ -4,7 +4,7 @@ import ValueCard from "~/components/molecules/ValueCard.vue";
 // SEO optimizado para página Sobre Nosotros
 useAppSEO(
   "Sobre Nosotros - Filosofía y Valores",
-  "Conoce Estética Saval: desde 2015 cuidando de ti en Callosa d'en Sarrià. Innovación, cercanía y excelencia en tratamientos estéticos de alta gama.",
+  "Conoce Estética Saval: desde 2009 cuidando de ti en Callosa d'en Sarrià. Innovación, cercanía y excelencia en tratamientos estéticos de alta gama.",
   "/img/equipo/indiba-Estetica-Saval.webp",
 );
 
@@ -70,7 +70,7 @@ const valores = [
       <div class="space-y-8">
         <div>
           <h2 class="font-display text-4xl text-brand-dark mb-4 italic">
-            Cuidando de ti desde 2015
+            Cuidando de ti desde 2009
           </h2>
           <p class="text-brand-muted leading-relaxed">
             Fundado en Callosa d'en Sarrià, nuestro centro nació con la idea de

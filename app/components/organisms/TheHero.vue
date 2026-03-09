@@ -5,9 +5,13 @@
       <NuxtImg
         src="/img/hero_img.webp"
         format="webp"
-        alt="Estética Saval"
+        alt="Centro de estética Saval en Callosa d'en Sarrià - Tratamientos faciales y corporales"
         class="w-full h-full object-cover object-[85%_center] md:object-center"
-        fetchpriority="high" />
+        fetchpriority="high"
+        loading="eager"
+        decoding="async"
+        sizes="100vw"
+        preload />
       <div class="absolute inset-0 bg-white/40 md:bg-transparent"></div>
       <div
         class="absolute inset-0 bg-gradient-to-b from-white/80 via-white/40 to-white/10 md:bg-gradient-to-r md:from-white/95 md:via-white/60 md:to-transparent"></div>

@@ -28,7 +28,7 @@ export default defineNuxtConfig({
     trailingSlash: true,
   },
 
-  // 4. Configuración de la App (GitHub Pages)
+  // 4. Configuración de la App
   app: {
     baseURL: "/estetica-saval-landing/",
     buildAssetsDir: "assets",
@@ -44,6 +44,26 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: "es",
       },
+      link: [
+        // Preload de la imagen hero (LCP)
+        {
+          rel: "preload",
+          as: "image",
+          href: "/estetica-saval-landing/img/hero_img.webp",
+          type: "image/webp",
+          fetchpriority: "high",
+        },
+        // Preconnect para fuentes
+        {
+          rel: "preconnect",
+          href: "https://fonts.googleapis.com",
+        },
+        {
+          rel: "preconnect",
+          href: "https://fonts.gstatic.com",
+          crossorigin: "anonymous",
+        },
+      ],
     },
   },
 
@@ -63,19 +83,50 @@ export default defineNuxtConfig({
       crawlLinks: true,
       routes: ["/sitemap.xml", "/robots.txt"],
     },
+    compressPublicAssets: true,
+    minify: true,
   },
 
-  // 8. Reglas de Rutas
+  // 8. Reglas de Rutas (caché optimizado)
   routeRules: {
     "/img/**": {
       headers: { "cache-control": "public, max-age=31536000, immutable" },
     },
+    "/fonts/**": {
+      headers: { "cache-control": "public, max-age=31536000, immutable" },
+    },
+    "/_nuxt/**": {
+      headers: { "cache-control": "public, max-age=31536000, immutable" },
+    },
   },
-  // 9. Configuración de Fuentes
+  // 9. Configuración de Fuentes (optimizado para LCP)
   fonts: {
     families: [
-      { name: "Inter", weights: [400, 600] },
-      { name: "Playfair Display", weights: [700], styles: ["normal"] },
+      { name: "Inter", weights: [400, 600], display: "swap" },
+      {
+        name: "Playfair Display",
+        weights: [700],
+        styles: ["normal"],
+        display: "swap",
+      },
     ],
+    defaults: {
+      weights: [400],
+      styles: ["normal"],
+      subsets: ["latin"],
+    },
+  },
+
+  // 10. Configuración de @nuxt/image
+  image: {
+    quality: 80,
+    format: ["webp", "avif"],
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+    },
   },
 });
