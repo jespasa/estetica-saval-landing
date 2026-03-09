@@ -150,7 +150,9 @@ watch(isMenuOpen, (val) => {
       </div>
     </div>
 
-    <div v-if="isMenuOpen" class="fixed inset-0 lg:hidden z-40">
+    <div
+      v-if="isMenuOpen"
+      class="fixed inset-x-0 top-20 bottom-0 lg:hidden z-40">
       <Transition
         appear
         enter-active-class="transition duration-300 ease-linear"
@@ -173,7 +175,7 @@ watch(isMenuOpen, (val) => {
         leave-from-class="opacity-100 translate-y-0"
         leave-to-class="opacity-0 -translate-y-4">
         <div
-          class="absolute top-20 inset-x-0 bg-white border-t border-gray-100 shadow-2xl overflow-hidden max-h-[calc(100vh-5rem)] overflow-y-auto">
+          class="absolute top-0 inset-x-0 bg-white border-t border-gray-100 shadow-2xl overflow-hidden max-h-[calc(100vh-5rem)] overflow-y-auto">
           <div class="px-4 py-8 space-y-2 bg-white relative">
             <!-- Inicio -->
             <NuxtLink
