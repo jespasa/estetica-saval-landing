@@ -4,8 +4,8 @@ import serviciosData from "~/assets/data/servicios.json";
 
 // SEO optimizado para página de servicios
 useAppSEO(
-  "Tratamientos de Estética Facial y Corporal",
-  "Descubre nuestros tratamientos: Indiba, fotodepilación, fotorejuvenecimiento, cavitación, presoterapia y más. Centro estética Callosa d'en Sarrià, Marina Baixa.",
+  "Tratamientos de Centro Estética Facial y Corporal",
+  "Descubre nuestros tratamientos: Indiba, fotodepilación, fotorejuvenecimiento, cavitación, presoterapia y más. Centro Estética Callosa d'en Sarrià, Marina Baixa.",
   "/img/servicios/indiba.webp",
 );
 
@@ -53,7 +53,7 @@ injectSchema(
         ¿No sabes qué tratamiento elegir?
       </h2>
       <p class="opacity-80 mb-8">
-        Nuestros especialistas te realizarán un diagnóstico gratuito para
+        Nuestras especialistas te realizarán un diagnóstico gratuito para
         recomendarte el plan que mejor se adapte a tu piel.
       </p>
       <NuxtLink

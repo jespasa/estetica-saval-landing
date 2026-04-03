@@ -7,7 +7,7 @@ const destacados = serviciosData.slice(0, 4);
 
 // SEO optimizado para página principal
 useAppSEO(
-  "Centro de Estética Avanzada en Callosa d'en Sarrià",
+  "Centro de Estética en Callosa d'en Sarrià",
   "Centro de estética en Callosa d'en Sarrià, Alicante. Especialistas en Indiba, fotodepilación, tratamientos faciales y corporales. Reserva tu cita. ☆ Tecnología de vanguardia.",
   "/img/hero_img.webp",
 );
@@ -37,12 +37,34 @@ injectSchema(getBreadcrumbSchema([{ name: "Inicio", url: "/" }]));
           :slug="servicio.slug" />
       </div>
 
-      <div class="mt-16 text-center">
+      <div class="mt-16">
         <NuxtLink
           to="/servicios"
-          class="inline-flex items-center gap-2 text-brand-primary font-bold hover:gap-4 transition-all uppercase tracking-widest text-sm">
-          Descubre todos los tratamientos
-          <Icon name="heroicons:arrow-right" class="w-5 h-5" />
+          class="group block relative overflow-hidden rounded-2xl bg-gradient-to-r from-brand-primary to-brand-dark p-8 md:p-12 text-center shadow-xl hover:shadow-2xl transition-all duration-300">
+          <div
+            class="absolute inset-0 bg-[url('/img/pattern.svg')] opacity-5"></div>
+          <div class="relative z-10">
+            <span
+              class="inline-block text-brand-secondary font-semibold tracking-[0.3em] uppercase text-xs mb-4"
+              >Explora más</span
+            >
+            <h3
+              class="font-display text-3xl md:text-4xl text-white mb-4 group-hover:scale-105 transition-transform">
+              Descubre todos nuestros
+              <span class="text-brand-secondary">tratamientos</span>
+            </h3>
+            <p class="text-white/70 mb-6 max-w-xl mx-auto">
+              Faciales, corporales, depilación láser y mucho más. Encuentra el
+              tratamiento perfecto para ti.
+            </p>
+            <span
+              class="inline-flex items-center gap-3 bg-white text-brand-primary px-8 py-3 rounded-full font-bold group-hover:gap-5 transition-all">
+              Ver todos los servicios
+              <Icon
+                name="heroicons:arrow-right"
+                class="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </span>
+          </div>
         </NuxtLink>
       </div>
     </section>
@@ -52,7 +74,7 @@ injectSchema(getBreadcrumbSchema([{ name: "Inicio", url: "/" }]));
       <div
         class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-brand-secondary/30 to-transparent"></div>
       <div class="max-w-3xl mx-auto relative z-10">
-        <h2 class="font-display text-4xl md:text-5xl text-white mb-6 italic">
+        <h2 class="font-display text-4xl md:text-5xl text-white mb-6">
           ¿Lista para dedicarte un momento?
         </h2>
         <p class="text-brand-secondary/80 text-lg mb-10">

@@ -4,8 +4,8 @@ import ValueCard from "~/components/molecules/ValueCard.vue";
 // SEO optimizado para página Sobre Nosotros
 useAppSEO(
   "Sobre Nosotros - Filosofía y Valores",
-  "Conoce Estética Saval: desde 2009 cuidando de ti en Callosa d'en Sarrià. Innovación, cercanía y excelencia en tratamientos estéticos de alta gama.",
-  "/img/equipo/indiba-Estetica-Saval.webp",
+  "Conoce Centro Estética Saval: desde 2009 cuidando de ti en Callosa d'en Sarrià. Innovación, cercanía y excelencia en tratamientos estéticos de alta gama.",
+  "/img/reme.webp",
 );
 
 // Breadcrumbs
@@ -42,7 +42,7 @@ const valores = [
     <section class="pt-20 pb-20 px-6 text-center bg-brand-secondary/20">
       <h1 class="font-display text-5xl md:text-7xl text-brand-dark mb-6">
         Nuestra
-        <span class="italic font-normal text-brand-primary">Filosofía</span>
+        <span class="font-normal text-brand-primary">Filosofía</span>
       </h1>
       <p class="max-w-2xl mx-auto text-brand-muted text-lg leading-relaxed">
         En Centro Estética Saval, creemos que la belleza es un reflejo del
@@ -65,7 +65,7 @@ const valores = [
 
       <div class="space-y-8">
         <div>
-          <h2 class="font-display text-4xl text-brand-dark mb-4 italic">
+          <h2 class="font-display text-4xl text-brand-dark mb-4">
             Cuidando de ti desde 2009
           </h2>
           <p class="text-brand-muted leading-relaxed">

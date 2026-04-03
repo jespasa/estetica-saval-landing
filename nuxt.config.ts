@@ -24,7 +24,7 @@ export default defineNuxtConfig({
   // IMPORTANTE: La URL debe coincidir con donde está alojada la web realmente
   site: {
     url: "https://estetica-saval-landing.vercel.app",
-    name: "Estética Saval",
+    name: "Centro Estética Saval",
     trailingSlash: true,
   },
 
@@ -33,7 +33,7 @@ export default defineNuxtConfig({
     baseURL: "/estetica-saval-landing/",
     buildAssetsDir: "assets",
     head: {
-      title: "Estética Saval",
+      title: "Centro Estética Saval",
       meta: [
         {
           name: "description",
