@@ -44,7 +44,7 @@ watch(isMenuOpen, (val) => {
             <NuxtImg
               src="/logo_white.webp"
               alt="Estética Saval"
-              class="h-10 md:h-18 w-auto"
+              class="h-18 w-auto"
               format="webp" />
           </NuxtLink>
         </div>
