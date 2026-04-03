@@ -16,9 +16,47 @@ const servicios = [
   "Otros",
 ];
 
-const handleSubmit = () => {
-  console.log("Datos enviados:", formData.value);
-  alert("Gracias por contactar. Te responderemos pronto.");
+type FormStatus = "idle" | "loading" | "success" | "error" | "rate-limited";
+const status = ref<FormStatus>("idle");
+const errorMessage = ref("");
+
+const handleSubmit = async () => {
+  status.value = "loading";
+  errorMessage.value = "";
+
+  try {
+    await $fetch("/api/contact", {
+      method: "POST",
+      body: {
+        nombre: formData.value.nombre,
+        telefono: formData.value.telefono,
+        servicio: formData.value.servicio,
+        mensaje: formData.value.mensaje,
+      },
+    });
+
+    status.value = "success";
+    formData.value = {
+      nombre: "",
+      email: "",
+      telefono: "",
+      servicio: "",
+      mensaje: "",
+    };
+  } catch (err: any) {
+    if (err?.statusCode === 429) {
+      status.value = "rate-limited";
+      errorMessage.value =
+        err?.data?.message ||
+        "Has enviado demasiadas solicitudes. Por favor, espera unos minutos.";
+    } else {
+      status.value = "error";
+      const apiErrors: string[] = err?.data?.data?.errors;
+      errorMessage.value = apiErrors?.length
+        ? apiErrors.join(" ")
+        : "Ha ocurrido un error. Por favor, inténtalo de nuevo.";
+    }
+  }
 };
 </script>
 
@@ -94,11 +132,38 @@ const handleSubmit = () => {
       </div>
 
       <div class="pt-4">
+        <!-- Success message -->
+        <div
+          v-if="status === 'success'"
+          class="w-full bg-green-50 border border-green-200 text-green-800 py-5 rounded-2xl text-center font-medium flex items-center justify-center gap-2">
+          <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+          Solicitud enviada. Te contactaremos pronto.
+        </div>
+
+        <!-- Rate-limit or error message -->
+        <div
+          v-else-if="status === 'rate-limited' || status === 'error'"
+          class="mb-4 bg-red-50 border border-red-200 text-red-700 px-5 py-4 rounded-2xl text-sm flex items-start gap-2">
+          <Icon name="ph:warning-fill" class="w-5 h-5 shrink-0 mt-0.5" />
+          {{ errorMessage }}
+        </div>
+
         <button
+          v-if="status !== 'success'"
           type="submit"
-          class="w-full bg-brand-primary text-white py-5 rounded-full font-bold text-lg shadow-lg hover:bg-brand-dark transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3">
-          <span>Enviar Solicitud</span>
-          <Icon name="ph:paper-plane-tilt-fill" class="w-5 h-5" />
+          :disabled="status === 'loading' || status === 'rate-limited'"
+          class="w-full bg-brand-primary text-white py-5 rounded-full font-bold text-lg shadow-lg hover:bg-brand-dark transition-all transform hover:-translate-y-1 flex items-center justify-center gap-3 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:translate-y-0">
+          <span>{{
+            status === "loading" ? "Enviando…" : "Enviar Solicitud"
+          }}</span>
+          <Icon
+            :name="
+              status === 'loading'
+                ? 'ph:circle-notch'
+                : 'ph:paper-plane-tilt-fill'
+            "
+            class="w-5 h-5"
+            :class="{ 'animate-spin': status === 'loading' }" />
         </button>
       </div>
     </form>
