@@ -8,6 +8,7 @@
 
     <TheFooter />
     <WhatsAppButton />
+    <CookieBanner />
   </div>
 </template>
 
@@ -15,6 +16,7 @@
 import TheNavbar from "@/components/organisms/TheNavbar.vue";
 import TheFooter from "@/components/organisms/TheFooter.vue";
 import WhatsAppButton from "@/components/atoms/WhatsAppButton.vue";
+import CookieBanner from "@/components/atoms/CookieBanner.vue";
 
 // Inyectar Schema.org global (LocalBusiness + WebSite)
 const { localBusinessSchema, websiteSchema, injectSchema } = useSchemaOrg();

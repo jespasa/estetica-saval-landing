@@ -94,11 +94,16 @@
       </div>
 
       <div
-        class="border-t border-brand-muted/20 pt-8 text-center text-xs opacity-60">
+        class="border-t border-brand-muted/20 pt-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs opacity-60">
         <p>
           &copy; {{ new Date().getFullYear() }} Estética Saval. Todos los
           derechos reservados.
         </p>
+        <NuxtLink
+          to="/privacidad"
+          class="hover:opacity-100 hover:text-brand-secondary transition-colors underline underline-offset-2">
+          Política de Privacidad y Cookies
+        </NuxtLink>
       </div>
     </div>
   </footer>
