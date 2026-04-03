@@ -81,8 +81,7 @@ injectSchema(getFAQSchema(faqs));
         <NuxtLink
           to="/servicios"
           class="group block relative overflow-hidden rounded-2xl bg-gradient-to-r from-brand-primary to-brand-dark p-8 md:p-12 text-center shadow-xl hover:shadow-2xl transition-all duration-300">
-          <div
-            class="absolute inset-0 bg-[url('/img/pattern.svg')] opacity-5"></div>
+          <div class="absolute inset-0 opacity-5"></div>
           <div class="relative z-10">
             <span
               class="inline-block text-brand-secondary font-semibold tracking-[0.3em] uppercase text-xs mb-4"
