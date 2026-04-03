@@ -7,7 +7,7 @@ import ContactInfoCard from "@/components/molecules/ContactInfoCard.vue";
 useAppSEO(
   "Contacto y Reserva de Cita",
   "Reserva tu cita en Centro Estética Saval. C/ Rafael Couchoud 10, Callosa d'en Sarrià. Tel: 965 88 17 33. Horario: Lun-Vie con cita previa. Sáb-Dom: Maquillaje para eventos. Diagnóstico gratuito.",
-  "/img/hero_img.webp",
+  "/img/logo_white.webp",
 );
 
 // Breadcrumbs

@@ -5,7 +5,7 @@ import ValueCard from "~/components/molecules/ValueCard.vue";
 useAppSEO(
   "Sobre Nosotros - Filosofía y Valores",
   "Conoce Centro Estética Saval: desde 2009 cuidando de ti en Callosa d'en Sarrià. Innovación, cercanía y excelencia en tratamientos estéticos de alta gama.",
-  "/img/reme.webp",
+  "/img/logo_white.webp",
 );
 
 // Breadcrumbs
