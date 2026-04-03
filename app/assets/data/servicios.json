@@ -2,8 +2,55 @@
   {
     "slug": "indiba",
     "title": "Indiba",
-    "description": "Tratamiento de radiofrecuencia regenerativa que reafirma la piel y reduce la grasa localizada desde el interior.",
-    "longDescription": "Indiba es la tecnología de radiofrecuencia más avanzada del mercado. Mediante ondas de radio de alta frecuencia (448 kHz), estimula la regeneración celular desde el interior, logrando resultados visibles desde la primera sesión. Ideal para reafirmar la piel, reducir la celulitis y modelar la figura de forma no invasiva.",
+    "description": "Tecnología avanzada que revitaliza, hidrata y esculpe tu piel. Siente el efecto tensor y rejuvenecedor con resultados reales desde el primer día.",
+    "longDescription": "Indiba es la tecnología de radiofrecuencia más avanzada del mercado. Mediante el uso de ondas de radio de alta frecuencia (448 kHz), estimula la regeneración celular desde el interior, logrando resultados visibles desde la primera sesión. Es el tratamiento ideal para reafirmar la piel, reducir la celulitis y modelar la figura de forma totalmente no invasiva e indolora.",
+    "extraInfo": "Dependiendo de tus objetivos, Indiba actúa a diferentes niveles para ofrecerte los mejores resultados:",
+    "sections": [
+      {
+        "icon": "💆‍♀️",
+        "title": "Beneficios Faciales",
+        "subtitle": "Rejuvenecimiento y Luminosidad",
+        "intro": "Actúa en las capas más profundas de la dermis para devolverle la juventud y firmeza a tu rostro:",
+        "items": [
+          {
+            "label": "Efecto lifting antiedad",
+            "description": " Revitaliza la piel y combate los signos del envejecimiento sin cirugía."
+          },
+          {
+            "label": "Reducción de arrugas",
+            "description": " Suaviza y difumina las arrugas y líneas de expresión."
+          },
+          {
+            "label": "Mirada descansada",
+            "description": " Mejora visiblemente el tono y el volumen de bolsas y ojeras."
+          },
+          {
+            "label": "Redefinición facial",
+            "description": " Tensa la piel y ayuda a marcar de nuevo el óvalo facial."
+          }
+        ]
+      },
+      {
+        "icon": "🧘‍♀️",
+        "title": "Beneficios Corporales",
+        "subtitle": "Remodelación y Firmeza",
+        "intro": "Esculpe tu cuerpo mientras disfrutas de una experiencia relajante y reparadora:",
+        "items": [
+          {
+            "label": "Modela la silueta",
+            "description": " Ayuda a redefinir los contornos naturales del cuerpo de forma armónica."
+          },
+          {
+            "label": "Triple acción intensiva",
+            "description": " Tratamiento altamente eficaz con efecto anticelulitis, antiestrías y antiflacidez."
+          },
+          {
+            "label": "Bienestar integral",
+            "description": " Favorece la recuperación de los tejidos, mejora la circulación y aporta una sensación de relajación profunda."
+          }
+        ]
+      }
+    ],
     "benefits": [
       "Reafirmación cutánea",
       "Reducción de grasa localizada",

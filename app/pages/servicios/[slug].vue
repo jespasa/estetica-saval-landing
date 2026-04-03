@@ -83,6 +83,53 @@ injectSchema([
         </p>
       </div>
 
+      <!-- Información extra y secciones detalladas -->
+      <div v-if="servicio.sections" class="mt-12 space-y-10">
+        <p
+          v-if="servicio.extraInfo"
+          class="text-lg text-brand-dark font-medium">
+          {{ servicio.extraInfo }}
+        </p>
+
+        <div
+          v-for="(section, index) in servicio.sections"
+          :key="index"
+          class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-brand-primary/10">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="text-3xl" role="img" :aria-label="section.title">{{
+              section.icon
+            }}</span>
+            <div>
+              <h3 class="font-display text-xl text-brand-dark">
+                {{ section.title }}
+              </h3>
+              <span class="text-brand-primary text-sm font-medium">{{
+                section.subtitle
+              }}</span>
+            </div>
+          </div>
+
+          <p class="text-brand-muted mb-6">{{ section.intro }}</p>
+
+          <ul class="space-y-4">
+            <li
+              v-for="(item, itemIndex) in section.items"
+              :key="itemIndex"
+              class="flex gap-4">
+              <Icon
+                name="heroicons:check-circle-solid"
+                class="w-6 h-6 text-brand-primary flex-shrink-0 mt-0.5" />
+              <div>
+                <span class="font-semibold text-brand-dark"
+                  >{{ item.label }}:</span
+                >
+                <span class="text-brand-muted"> {{ item.description }}</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <!-- Beneficios -->
       <div v-if="servicio.benefits" class="mt-12">
         <h2 class="font-display text-2xl text-brand-dark mb-6">
@@ -99,6 +146,26 @@ injectSchema([
             <span class="text-brand-dark text-sm font-medium">{{
               benefit
             }}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Galería de imágenes -->
+      <div v-if="servicio.gallery?.length" class="mt-12">
+        <h2 class="font-display text-2xl text-brand-dark mb-6">
+          Galería del tratamiento
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div
+            v-for="(img, index) in servicio.gallery"
+            :key="index"
+            class="aspect-[4/3] rounded-xl overflow-hidden">
+            <NuxtImg
+              :src="img.src"
+              :alt="img.alt"
+              class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+              format="webp"
+              loading="lazy" />
           </div>
         </div>
       </div>
