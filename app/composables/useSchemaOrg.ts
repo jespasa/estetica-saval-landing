@@ -76,7 +76,7 @@ export const useSchemaOrg = () => {
     ],
     sameAs: [
       "https://www.facebook.com/p/CENTRO-EST%C3%89TICA-SAVAL-100063517870433/",
-      // Añadir Instagram cuando esté disponible
+      "https://www.instagram.com/centroesteticasaval/",
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -146,8 +146,8 @@ export const useSchemaOrg = () => {
     "@type": "WebSite",
     "@id": `${siteUrl}/#website`,
     url: siteUrl,
-    name: "Estética Saval",
-    description: "Centro de estética avanzada en Callosa d'en Sarrià",
+    name: "Centro Estética Saval",
+    description: "Centro de estética en Callosa d'en Sarrià",
     publisher: {
       "@id": `${siteUrl}/#organization`,
     },
@@ -191,6 +191,20 @@ export const useSchemaOrg = () => {
     serviceType: "Tratamiento estético",
   });
 
+  // Schema FAQPage para preguntas frecuentes (AEO/GEO - featured snippets)
+  const getFAQSchema = (faqs: Array<{ question: string; answer: string }>) => ({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  });
+
   // Función para inyectar el schema en el head
   const injectSchema = (schema: object | object[]) => {
     const schemas = Array.isArray(schema) ? schema : [schema];
@@ -208,6 +222,7 @@ export const useSchemaOrg = () => {
     websiteSchema,
     getBreadcrumbSchema,
     getServiceSchema,
+    getFAQSchema,
     injectSchema,
   };
 };

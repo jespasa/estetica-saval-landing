@@ -12,11 +12,12 @@ export const useAppSEO = (
 
   const seoTitle = title
     ? `${title} | Estética Saval`
-    : "Estética Saval | Bienestar y Alta Gama";
+    : "Estética Saval | Centro de Belleza y Bienestar en Callosa d'en Sarrià";
   const seoDesc =
     description ||
-    "Tu refugio de bienestar y belleza. Especialistas en tratamientos faciales y corporales.";
+    "Centro de estética en Callosa d'en Sarrià. Tratamientos faciales y corporales con Indiba, fotodepilación, Dermapen y cosmética Sothys. Diagnóstico gratuito.";
   const seoImg = image ? `${siteUrl}${image}` : `${siteUrl}/logo_white.webp`;
+  const canonicalUrl = `${siteUrl}${route.path}`;
 
   useSeoMeta({
     title: seoTitle,
@@ -24,9 +25,19 @@ export const useAppSEO = (
     description: seoDesc,
     ogDescription: seoDesc,
     ogImage: seoImg,
-    ogUrl: `${siteUrl}${route.path}`,
+    ogUrl: canonicalUrl,
+    ogSiteName: "Centro Estética Saval",
     twitterCard: "summary_large_image",
+    twitterTitle: seoTitle,
+    twitterDescription: seoDesc,
+    twitterImage: seoImg,
     ogType: "website",
     ogLocale: "es_ES",
+    robots:
+      "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+  });
+
+  useHead({
+    link: [{ rel: "canonical", href: canonicalUrl }],
   });
 };

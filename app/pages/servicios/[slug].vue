@@ -21,15 +21,23 @@ const serviciosRelacionados = serviciosData
   .slice(0, 3);
 
 // SEO optimizado para página de servicio individual
+const rawDesc = servicio.longDescription || servicio.description;
+const truncatedDesc =
+  rawDesc.length > 155
+    ? rawDesc.slice(0, rawDesc.lastIndexOf(" ", 155)) + "…"
+    : rawDesc;
+
 useAppSEO(
-  `${servicio.title} - Tratamiento en Callosa d'en Sarrià`,
-  `${servicio.longDescription?.slice(0, 155)}... Centro estética Saval, Alicante.`,
+  `${servicio.title} en Callosa d'en Sarrià`,
+  `${truncatedDesc} Centro Estética Saval, Alicante.`,
   servicio.imageSrc,
 );
 
 // Schema.org para servicio individual
-const { getServiceSchema, getBreadcrumbSchema, injectSchema } = useSchemaOrg();
-injectSchema([
+const { getServiceSchema, getBreadcrumbSchema, getFAQSchema, injectSchema } =
+  useSchemaOrg();
+
+const schemas: object[] = [
   getServiceSchema({
     name: servicio.title,
     description: servicio.longDescription || servicio.description,
@@ -41,7 +49,13 @@ injectSchema([
     { name: "Servicios", url: "/servicios" },
     { name: servicio.title, url: `/servicios/${servicio.slug}` },
   ]),
-]);
+];
+
+if (servicio.faqs?.length) {
+  schemas.push(getFAQSchema(servicio.faqs));
+}
+
+injectSchema(schemas);
 </script>
 
 <template>
@@ -96,20 +110,28 @@ injectSchema([
           :key="index"
           class="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-brand-primary/10">
           <div class="flex items-center gap-3 mb-4">
-            <span class="text-3xl" role="img" :aria-label="section.title">{{
-              section.icon
-            }}</span>
+            <span
+              v-if="(section as any).icon"
+              class="text-3xl"
+              role="img"
+              :aria-label="section.title"
+              >{{ (section as any).icon }}</span
+            >
             <div>
               <h3 class="font-display text-xl text-brand-dark">
                 {{ section.title }}
               </h3>
-              <span class="text-brand-primary text-sm font-medium">{{
-                section.subtitle
-              }}</span>
+              <span
+                v-if="(section as any).subtitle"
+                class="text-brand-primary text-sm font-medium"
+                >{{ (section as any).subtitle }}</span
+              >
             </div>
           </div>
 
-          <p class="text-brand-muted mb-6">{{ section.intro }}</p>
+          <p v-if="(section as any).intro" class="text-brand-muted mb-6">
+            {{ (section as any).intro }}
+          </p>
 
           <ul class="space-y-4">
             <li
@@ -167,6 +189,26 @@ injectSchema([
               loading="lazy" />
           </div>
         </div>
+      </div>
+
+      <!-- Preguntas frecuentes del tratamiento -->
+      <div v-if="servicio.faqs?.length" class="mt-16">
+        <h2 class="font-display text-2xl text-brand-dark mb-6">
+          Preguntas frecuentes sobre {{ servicio.title }}
+        </h2>
+        <dl class="space-y-4">
+          <div
+            v-for="faq in servicio.faqs"
+            :key="faq.question"
+            class="bg-white rounded-2xl p-6 shadow-sm border border-brand-primary/10">
+            <dt class="font-semibold text-brand-dark mb-2">
+              {{ faq.question }}
+            </dt>
+            <dd class="text-brand-muted leading-relaxed">
+              {{ faq.answer }}
+            </dd>
+          </div>
+        </dl>
       </div>
 
       <!-- CTA -->

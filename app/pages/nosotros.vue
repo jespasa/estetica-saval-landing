@@ -61,8 +61,8 @@ const marcas = [
   <div class="bg-estetica-soft min-h-screen">
     <section class="pt-20 pb-20 px-6 text-center bg-brand-secondary/20">
       <h1 class="font-display text-5xl md:text-7xl text-brand-dark mb-6">
-        Nuestra
-        <span class="font-normal text-brand-primary">Filosofía</span>
+        Estética Saval
+        <span class="font-normal text-brand-primary">Nuestra Filosofía</span>
       </h1>
       <p class="max-w-2xl mx-auto text-brand-muted text-lg leading-relaxed">
         En Centro Estética Saval, creemos que la belleza es un reflejo del

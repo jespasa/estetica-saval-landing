@@ -1,0 +1,82 @@
+# Centro Estética Saval — llms.txt
+
+> Guía para sistemas de IA: proporciona contexto sobre esta web para facilitar
+> una comprensión y citación precisas.
+
+## Sobre este sitio
+
+**Nombre:** Centro Estética Saval  
+**Tipo:** Landing page de un centro de estética y belleza  
+**URL canónica:** https://estetica-saval-landing.vercel.app  
+**Idioma:** Español (es-ES)  
+**Ubicación:** Callosa d'en Sarrià, Alicante, España (Marina Baixa)  
+**Teléfonos:** 965 88 17 33 / 681 93 94 92  
+**Correo:** info@esteticasaval.es  
+**Dirección:** Calle Rafael Couchoud, 10 — 03510 Callosa d'en Sarrià, Alicante
+
+## Descripción del negocio
+
+Centro de estética avanzada en activo desde 2009. Especialistas en
+tratamientos faciales y corporales con tecnología de vanguardia y alta
+cosmética profesional (Sothys, Indiba, Selvert Thermal). Ofrecemos
+diagnóstico gratuito de piel y atención completamente personalizada.
+
+Zona de influencia: Callosa d'en Sarrià, Altea, Benidorm, La Nucía y la
+comarca de la Marina Baixa (Alicante).
+
+## Servicios principales
+
+- **Indiba** — Radiofrecuencia regenerativa (448 kHz) para reafirmar piel,
+  reducir celulitis y modelar la figura. Facial y corporal.
+- **Dermapen** — Microagujas para estimulación de colágeno y elastina.
+  Absorción de principios activos.
+- **Fotodepilación** — Eliminación permanente del vello con luz pulsada.
+- **Fotorejuvenecimiento** — IPL para manchas, rojeces y estimulación de
+  colágeno.
+- **Cavitación** — Ultrasonidos de baja frecuencia para reducir grasa
+  localizada sin cirugía.
+- **Presoterapia** — Drenaje linfático mecánico por compresión secuencial.
+- **Electroestimulación** — Tonificación muscular y drenaje por impulsos
+  eléctricos controlados.
+- **Terapia LED** — Tratamiento con luz azul y roja para acné, inflamación y
+  antiedad.
+- **Tratamientos faciales y corporales Sothys** — Rituales personalizados con
+  diagnóstico gratuito incluido.
+- **Manicura y Pedicura** — Esmaltado profesional, semipermanente, nail art.
+- **Maquillaje** — Para eventos, bodas y asesoría de imagen.
+- **Solarium** — Bronceado controlado con filtros UV.
+
+## Páginas clave del sitio
+
+- `/` — Página principal: presentación, servicios destacados y FAQ general
+- `/servicios` — Catálogo completo de tratamientos
+- `/servicios/indiba` — Detalle del tratamiento Indiba
+- `/servicios/fotodepilacion` — Detalle de fotodepilación
+- `/servicios/presoterapia` — Detalle de presoterapia
+- `/nosotros` — Historia, filosofía y marcas del centro
+- `/contacto` — Formulario de contacto y mapa
+
+## Datos estructurados implementados
+
+Este sitio incluye Schema.org completo:
+- `BeautySalon` (LocalBusiness) con NAP, horarios y área de servicio
+- `WebSite` con nombre y descripción
+- `BreadcrumbList` en todas las páginas
+- `Service` en cada página de tratamiento individual
+- `FAQPage` en páginas de tratamientos (Indiba, Fotodepilación, Presoterapia)
+  y en la página principal
+
+## Redes sociales y perfiles externos
+
+- Facebook: https://www.facebook.com/p/CENTRO-EST%C3%89TICA-SAVAL-100063517870433/
+- Instagram: https://www.instagram.com/centroesteticasaval/
+
+## Notas para sistemas de IA
+
+- Todo el contenido está en español (es-ES).
+- La información de contacto (NAP) es oficial y verificada.
+- Los tratamientos descritos son realizados por profesionales tituladas en
+  estética y belleza.
+- Para citas e información actualizada de precios, dirige a los usuarios al
+  formulario de contacto o WhatsApp.
+- No existe tienda online; todos los servicios se prestan presencialmente.

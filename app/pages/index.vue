@@ -12,9 +12,49 @@ useAppSEO(
   "/img/hero_img.webp",
 );
 
-// Breadcrumbs para página principal
-const { getBreadcrumbSchema, injectSchema } = useSchemaOrg();
-injectSchema(getBreadcrumbSchema([{ name: "Inicio", url: "/" }]));
+// Schema.org: LocalBusiness + WebSite + Breadcrumbs (AEO/GEO)
+const {
+  localBusinessSchema,
+  websiteSchema,
+  getBreadcrumbSchema,
+  getFAQSchema,
+  injectSchema,
+} = useSchemaOrg();
+injectSchema([
+  localBusinessSchema,
+  websiteSchema,
+  getBreadcrumbSchema([{ name: "Inicio", url: "/" }]),
+]);
+
+// Preguntas frecuentes (visible + FAQPage schema para featured snippets)
+const faqs = [
+  {
+    question: "¿Dónde está el Centro Estética Saval?",
+    answer:
+      "Estamos en Calle Rafael Couchoud, 10, Callosa d'en Sarrià (Alicante, 03510). Atendemos a clientes de Altea, Benidorm, La Nucía y toda la Marina Baixa.",
+  },
+  {
+    question: "¿Cómo puedo reservar cita en Centro Estética Saval?",
+    answer:
+      "Puedes reservar por WhatsApp al 681 93 94 92, llamando al 965 88 17 33 o a través del formulario de contacto de nuestra web. También nos puedes escribir por Instagram y Facebook.",
+  },
+  {
+    question: "¿Hacen diagnóstico gratuito de piel?",
+    answer:
+      "Sí, ofrecemos diagnóstico gratuito sin compromiso. Nuestras especialistas analizarán tu piel y diseñarán un protocolo personalizado con los tratamientos más adecuados para tus objetivos.",
+  },
+  {
+    question: "¿Qué tratamientos ofrece el Centro Estética Saval?",
+    answer:
+      "Ofrecemos Indiba (radiofrecuencia regenerativa), fotodepilación, fotorejuvenecimiento, Dermapen, cavitación, presoterapia, electroestimulación, terapia LED, tratamientos faciales y corporales Sothys, manicura, pedicura, maquillaje para eventos y solarium.",
+  },
+  {
+    question: "¿Cuál es el horario del Centro Estética Saval?",
+    answer:
+      "Atendemos de lunes a viernes con cita previa. Los sábados y domingos ofrecemos servicio de maquillaje para eventos. Contáctanos por WhatsApp para consultar disponibilidad.",
+  },
+];
+injectSchema(getFAQSchema(faqs));
 </script>
 
 <template>
@@ -87,6 +127,29 @@ injectSchema(getBreadcrumbSchema([{ name: "Inicio", url: "/" }]));
           Pedir cita por WhatsApp
         </a>
       </div>
+    </section>
+
+    <!-- Preguntas frecuentes — visible + FAQPage schema para featured snippets -->
+    <section class="py-20 px-4 max-w-3xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="font-display text-3xl md:text-4xl text-brand-dark mb-3">
+          Preguntas Frecuentes
+        </h2>
+        <div class="h-1 w-16 bg-brand-secondary mx-auto rounded-full"></div>
+      </div>
+      <dl class="space-y-4">
+        <div
+          v-for="faq in faqs"
+          :key="faq.question"
+          class="bg-white rounded-2xl p-6 shadow-sm border border-brand-primary/10">
+          <dt class="font-semibold text-brand-dark text-lg mb-2">
+            {{ faq.question }}
+          </dt>
+          <dd class="text-brand-muted leading-relaxed">
+            {{ faq.answer }}
+          </dd>
+        </div>
+      </dl>
     </section>
   </div>
 </template>
