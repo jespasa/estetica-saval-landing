@@ -26,9 +26,7 @@ const handleSubmit = () => {
   <div
     class="bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-brand-secondary/20 h-full flex flex-col justify-center">
     <div class="mb-8">
-      <h3 class="font-display text-3xl text-brand-dark mb-2 italic">
-        Escríbenos
-      </h3>
+      <h3 class="font-display text-3xl text-brand-dark mb-2">Escríbenos</h3>
       <p class="text-brand-muted text-sm uppercase tracking-widest">
         Solicita tu cita o información
       </p>

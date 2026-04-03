@@ -54,9 +54,8 @@
             Horario
           </h4>
           <ul class="space-y-3 text-sm opacity-80">
-            <li>Lunes - Viernes: 10:00 - 20:00</li>
-            <li>Sábados: 09:00 - 14:00</li>
-            <li>Domingos: Cerrado</li>
+            <li>Lunes - Viernes: Cita previa</li>
+            <li>Sábados - Domingos: Maquillaje para eventos</li>
           </ul>
         </div>
 
