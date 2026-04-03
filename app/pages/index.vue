@@ -9,7 +9,7 @@ const destacados = serviciosData.slice(0, 4);
 useAppSEO(
   "Centro de Estética en Callosa d'en Sarrià",
   "Centro de estética en Callosa d'en Sarrià, Alicante. Especialistas en Indiba, fotodepilación, tratamientos faciales y corporales. Reserva tu cita. ☆ Tecnología de vanguardia.",
-  "/img/logo_white.webp",
+  "/logo_white.webp",
 );
 
 // Schema.org: LocalBusiness + WebSite + Breadcrumbs (AEO/GEO)
