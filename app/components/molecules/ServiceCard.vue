@@ -11,7 +11,7 @@ defineProps<{
 <template>
   <NuxtLink
     :to="slug ? `/servicios/${slug}` : '/servicios'"
-    class="group p-6 bg-white rounded-2xl shadow-sm border border-brand-secondary/20 hover:border-brand-primary/50 transition-all duration-300 hover:-translate-y-1 text-center flex flex-col items-center">
+    class="group p-6 bg-white rounded-2xl shadow-sm border border-brand-secondary/20 hover:border-brand-primary/50 transition-all duration-300 hover:-translate-y-1 text-center flex flex-col items-center min-h-[475px]">
     <div v-if="imageSrc" class="mb-4 w-full h-48 overflow-hidden rounded-xl">
       <NuxtImg
         :src="imageSrc"
@@ -35,12 +35,14 @@ defineProps<{
     <div
       class="mt-4 w-10 h-0.5 bg-brand-secondary mx-auto group-hover:w-20 transition-all"></div>
 
-    <p v-if="description" class="mt-4 text-sm text-brand-muted leading-relaxed">
+    <p
+      v-if="description"
+      class="mt-4 text-sm text-brand-muted leading-relaxed flex-1">
       {{ description }}
     </p>
 
     <span
-      class="mt-4 text-brand-primary font-semibold text-xs tracking-widest uppercase inline-flex items-center gap-1">
+      class="mt-6 text-brand-primary font-semibold text-xs tracking-widest uppercase inline-flex items-center gap-1">
       Ver más
       <Icon
         name="heroicons:arrow-right"
