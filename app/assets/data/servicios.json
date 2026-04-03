@@ -322,7 +322,21 @@
       "Técnicas exclusivas",
       "Resultados visibles"
     ],
-    "imageSrc": "/img/servicios/tratamientos-combinados.webp"
+    "imageSrc": "/img/servicios/tratamientos-combinados.webp",
+    "gallery": [
+      {
+        "src": "/img/productos/sothys1.webp",
+        "alt": "Producto Sothys"
+      },
+      {
+        "src": "/img/productos/sothys2.webp",
+        "alt": "Producto Sothys"
+      },
+      {
+        "src": "/img/productos/sothys3.webp",
+        "alt": "Producto Sothys"
+      }
+    ]
   },
   {
     "slug": "manicura",

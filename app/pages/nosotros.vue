@@ -60,7 +60,9 @@ const valores = [
           src="/img/reme.webp"
           alt="Tecnología Indiba en Saval"
           class="relative z-10 rounded-[2.5rem] shadow-2xl w-full object-cover h-[550px]"
-          format="webp" />
+          loading="eager"
+          decoding="async"
+          preload />
       </div>
 
       <div class="space-y-8">

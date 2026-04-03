@@ -164,7 +164,6 @@ injectSchema([
               :src="img.src"
               :alt="img.alt"
               class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-              format="webp"
               loading="lazy" />
           </div>
         </div>
