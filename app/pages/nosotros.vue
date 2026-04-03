@@ -35,6 +35,26 @@ const valores = [
     desc: "Un refugio diseñado para tu desconexión total.",
   },
 ];
+
+// NUEVO: Array de marcas con su propia imagen
+const marcas = [
+  {
+    name: "Sothys",
+    desc: "Alta cosmética francesa de prestigio, sinónimo de excelencia, elegancia y resultados.",
+    image: "/img/marcas/logo_sothys.webp",
+  },
+  {
+    name: "Indiba",
+    desc: "Líder mundial en radiofrecuencia regenerativa para tratamientos faciales y corporales.",
+    image: "/img/marcas/logo_indiba.webp",
+  },
+
+  {
+    name: "Selvert Thermal",
+    desc: "Cosmética profesional avanzada que fusiona la tradición termal con activos de última generación.",
+    image: "/img/marcas/logo_selvert.webp",
+  },
+];
 </script>
 
 <template>
@@ -58,7 +78,7 @@ const valores = [
           class="absolute -top-4 -left-4 w-full h-full border-2 border-brand-secondary rounded-[2.5rem] -z-10"></div>
         <NuxtImg
           src="/img/reme.webp"
-          alt="Tecnología Indiba en Saval"
+          alt="Reme en Centro de Estética Saval"
           class="relative z-10 rounded-[2.5rem] shadow-2xl w-full object-cover h-[550px]"
           loading="eager"
           decoding="async"
@@ -86,13 +106,44 @@ const valores = [
             cuidado de la piel se encuentran."
           </p>
         </div>
+      </div>
+    </section>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-          <ValueCard
-            v-for="valor in valores.slice(0, 2)"
-            :key="valor.title"
-            :title="valor.title"
-            :description="valor.desc" />
+    <section class="max-w-7xl mx-auto py-24 px-6">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="font-display text-4xl text-brand-dark mb-4">
+          Aliados de máxima excelencia
+        </h2>
+        <p class="text-brand-muted leading-relaxed">
+          Para garantizar resultados visibles y duraderos, trabajamos
+          exclusivamente con firmas líderes en tecnología y cosmética. Cada
+          producto ha sido rigurosamente seleccionado para ofrecer a tu piel la
+          calidad que merece.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          v-for="marca in marcas"
+          :key="marca.name"
+          class="bg-white rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col group border border-brand-secondary/20">
+          <div class="relative h-56 overflow-hidden">
+            <NuxtImg
+              :src="marca.image"
+              :alt="`Productos y tecnología de ${marca.name}`"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              loading="lazy"
+              decoding="async" />
+          </div>
+
+          <div class="p-8 flex-1 flex flex-col">
+            <h4 class="text-2xl font-display text-brand-dark mb-3">
+              {{ marca.name }}
+            </h4>
+            <p class="text-brand-muted text-sm leading-relaxed flex-1">
+              {{ marca.desc }}
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -108,7 +159,7 @@ const valores = [
           <div
             v-for="valor in valores"
             :key="valor.title"
-            class="text-center p-6">
+            class="text-center p-6 bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
             <h4 class="font-display text-xl text-brand-primary mb-2">
               {{ valor.title }}
             </h4>
