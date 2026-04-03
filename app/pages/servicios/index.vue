@@ -23,11 +23,11 @@ injectSchema(
   <div class="bg-estetica-soft min-h-screen pb-20">
     <section class="py-20 px-6 bg-brand-secondary/10 text-center">
       <span
-        class="text-brand-primary font-medium tracking-widest uppercase text-sm"
-        >Nuestros Tratamientos</span
+        class="text-brand-primary font-medium tracking-widest uppercase text-sm">
+        Experiencias de Bienestar</span
       >
       <h1 class="font-display text-5xl md:text-6xl text-brand-dark mt-4 mb-6">
-        Experiencias de <span class="text-brand-primary">Bienestar</span>
+        Nuestros <span class="text-brand-primary">Tratamientos</span>
       </h1>
       <p class="max-w-2xl mx-auto text-brand-muted text-lg">
         Combinamos tecnología de vanguardia con técnicas tradicionales para

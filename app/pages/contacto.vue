@@ -37,20 +37,19 @@ injectSchema(
           icon="ph:phone-fill"
           title="Teléfono"
           detail="965 88 17 33 - 681 93 94 92" />
-        <ContactInfoCard
-          icon="ph:map-pin-fill"
-          title="Dirección"
-          detail="C/ Rafael Couchoud, 10" />
+        <ContactInfoCard icon="ph:map-pin-fill" title="Dirección">
+          <p class="mt-2">C/ Rafael Couchoud, 10</p>
+          <p>Callosa d'en Sarrià, Alicante</p>
+        </ContactInfoCard>
         <ContactInfoCard icon="ph:clock-fill" title="Horario">
           <p>
-            <span class="font-bold text-brand-dark">Lun - Vie:</span> 10:00 –
-            20:00
+            <span class="font-bold text-brand-dark">Lun - Vie:</span> Con cita
+            previa
           </p>
           <p>
-            <span class="font-bold text-brand-dark">Sábados:</span> 09:00 –
-            14:00
+            <span class="font-bold text-brand-dark">Sábados y Domingos:</span>
+            Maquillaje para eventos
           </p>
-          <p class="text-brand-primary mt-2 italic">Domingos: Cerrado</p>
         </ContactInfoCard>
       </div>
 

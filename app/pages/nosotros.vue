@@ -39,18 +39,14 @@ const valores = [
 
 <template>
   <div class="bg-estetica-soft min-h-screen">
-    <section class="pt-32 pb-20 px-6 text-center bg-brand-secondary/20">
-      <span
-        class="text-brand-primary font-semibold tracking-[0.3em] uppercase text-xs mb-4 block"
-        >Esencia Saval</span
-      >
+    <section class="pt-20 pb-20 px-6 text-center bg-brand-secondary/20">
       <h1 class="font-display text-5xl md:text-7xl text-brand-dark mb-6">
         Nuestra
         <span class="italic font-normal text-brand-primary">Filosofía</span>
       </h1>
       <p class="max-w-2xl mx-auto text-brand-muted text-lg leading-relaxed">
-        En Estética Saval, creemos que la belleza es un reflejo del equilibrio
-        interior. Nuestro compromiso es ofrecerte un espacio de paz y
+        En Centro Estética Saval, creemos que la belleza es un reflejo del
+        equilibrio interior. Nuestro compromiso es ofrecerte un espacio de paz y
         tratamientos de vanguardia para realzar tu luz natural.
       </p>
     </section>
@@ -83,8 +79,9 @@ const valores = [
         <div
           class="bg-white p-8 rounded-[2rem] border-l-4 border-brand-primary shadow-sm italic">
           <p class="text-brand-dark text-lg">
-            "Nuestra visión es ser el centro de referencia donde la innovación
-            constante en aparatología y el cuidado de la salud se encuentran."
+            "Nuestra visión es ser el centro de estética de referencia en la
+            Marina Baixa, donde la innovación constante en aparatología y el
+            cuidado de la piel se encuentran."
           </p>
         </div>
 
