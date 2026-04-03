@@ -28,8 +28,8 @@ const visible = computed(() => consent.value === "pending");
             <span class="font-semibold text-white"
               >Usamos cookies analíticas</span
             >
-            para entender cómo se usa la web y mejorar tu experiencia (Vercel
-            Analytics). No compartimos tus datos con terceros.
+            para entender cómo se usa la web y mejorar tu experiencia. No
+            compartimos tus datos con terceros.
             <NuxtLink
               to="/privacidad"
               class="underline underline-offset-2 text-brand-secondary hover:text-white transition-colors ml-1">
