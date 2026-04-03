@@ -4,13 +4,11 @@
     <div class="absolute inset-0 z-0">
       <NuxtImg
         src="/img/hero_img.webp"
-        format="webp"
         alt="Centro de estética Saval en Callosa d'en Sarrià - Tratamientos faciales y corporales"
         class="w-full h-full object-cover object-[85%_center] md:object-center"
         fetchpriority="high"
         loading="eager"
         decoding="async"
-        sizes="100vw"
         preload />
       <div class="absolute inset-0 bg-white/40 md:bg-transparent"></div>
       <div
@@ -25,13 +23,13 @@
             class="w-2 h-2 rounded-full bg-brand-primary animate-pulse"></span>
           <span
             class="text-brand-primary font-semibold tracking-[0.2em] uppercase text-[10px] md:text-xs">
-            Bienvenida a la experiencia
+            Bienvenida a tu experiencia en
           </span>
         </div>
 
         <h1
           class="font-display text-6xl md:text-8xl lg:text-9xl text-brand-dark mb-6 leading-[1.1] tracking-tight">
-          Estética <br class="hidden md:block" />
+          Centro Estética <br class="hidden md:block" />
           <span class="italic font-normal text-brand-primary drop-shadow-sm"
             >Saval</span
           >
@@ -39,12 +37,12 @@
 
         <p
           class="max-w-lg mx-auto md:mx-0 text-brand-muted text-lg md:text-xl mb-12 leading-relaxed font-light">
-          Donde la ciencia de la piel se encuentra con el arte del bienestar.
-          Especialistas en tratamientos de
+          Tu centro de estética en Callosa d'en Sarrià. Especialistas en
           <span
             class="text-brand-dark font-medium underline decoration-brand-secondary underline-offset-4"
-            >alta gama</span
-          >.
+            >tratamientos faciales y corporales</span
+          >
+          personalizados para realzar tu belleza natural.
         </p>
 
         <div

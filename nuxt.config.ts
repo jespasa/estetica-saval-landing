@@ -45,14 +45,6 @@ export default defineNuxtConfig({
         lang: "es",
       },
       link: [
-        // Preload de la imagen hero (LCP)
-        {
-          rel: "preload",
-          as: "image",
-          href: "/estetica-saval-landing/img/hero_img.webp",
-          type: "image/webp",
-          fetchpriority: "high",
-        },
         // Preconnect para fuentes
         {
           rel: "preconnect",
