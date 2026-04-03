@@ -7,7 +7,6 @@
     "extraInfo": "Dependiendo de tus objetivos, Indiba actúa a diferentes niveles para ofrecerte los mejores resultados:",
     "sections": [
       {
-        "icon": "💆‍♀️",
         "title": "Beneficios Faciales",
         "subtitle": "Rejuvenecimiento y Luminosidad",
         "intro": "Actúa en las capas más profundas de la dermis para devolverle la juventud y firmeza a tu rostro:",
@@ -31,7 +30,6 @@
         ]
       },
       {
-        "icon": "🧘‍♀️",
         "title": "Beneficios Corporales",
         "subtitle": "Remodelación y Firmeza",
         "intro": "Esculpe tu cuerpo mientras disfrutas de una experiencia relajante y reparadora:",
@@ -59,6 +57,53 @@
       "Resultados desde la 1ª sesión"
     ],
     "imageSrc": "/img/servicios/indiba.webp"
+  },
+  {
+    "slug": "dermapen",
+    "title": "Dermapen",
+    "description": "Dispositivo de microagujas que estimula mecánicamente los fibroblastos, favoreciendo la producción natural de colágeno y elastina para reafirmar y rejuvenecer tu piel.",
+    "longDescription": "El tratamiento con Dermapen revoluciona la forma en que cuidamos y nutrimos el rostro. A través de su sistema de micropunción, crea miles de microcanales conductores que multiplican exponencialmente la absorción y la acción transepidérmica de los principios activos. Esto permite que los nutrientes superen la barrera superficial de la piel y penetren en las capas más profundas, donde realmente son efectivos.",
+    "extraInfo": "Durante la sesión, combinamos la estimulación mecánica con cócteles de principios activos puros, seleccionados específicamente para tu piel:",
+    "sections": [
+      {
+        "title": "Principios Activos de Alta Eficacia",
+        "items": [
+          {
+            "label": "Ácido Hialurónico",
+            "description": " Hidratación profunda que redensifica la dermis, aportando un volumen natural y recuperando la elasticidad perdida."
+          },
+          {
+            "label": "Vitamina C",
+            "description": " Un potente escudo antioxidante que frena los radicales libres, aporta una luminosidad inmediata y revitaliza los rostros apagados."
+          }
+        ]
+      },
+      {
+        "title": "Resultados Visibles y Transformación",
+        "items": [
+          {
+            "label": "Regeneración intensiva",
+            "description": " Acelera la renovación celular para revelar una textura de piel más fresca, lisa y rejuvenecida."
+          },
+          {
+            "label": "Acción Reafirmante",
+            "description": " Tensa los tejidos y combate la flacidez, mejorando la firmeza y la estructura facial."
+          },
+          {
+            "label": "Corrección de Manchas",
+            "description": " Ayuda a difuminar la hiperpigmentación, marcas y pequeñas imperfecciones, logrando un tono mucho más uniforme y un aspecto radiante."
+          }
+        ]
+      }
+    ],
+    "benefits": [
+      "Regeneración celular intensiva",
+      "Estimulación natural de colágeno y elastina",
+      "Reafirmación cutánea y efecto tensor",
+      "Atenuación de manchas e imperfecciones",
+      "Hidratación profunda y extra de luminosidad"
+    ],
+    "imageSrc": "/img/servicios/dermapen.webp"
   },
   {
     "slug": "fotorejuvenecimiento",
@@ -119,8 +164,49 @@
   {
     "slug": "presoterapia",
     "title": "Presoterapia",
-    "description": "Masaje de compresión neumática que mejora la circulación y ayuda a la eliminación de toxinas y celulitis.",
-    "longDescription": "La presoterapia es un tratamiento de drenaje linfático mecánico mediante presión de aire secuencial. Ideal para piernas cansadas, retención de líquidos, celulitis y mala circulación. Produce una sensación de ligereza inmediata y ayuda a eliminar toxinas del organismo.",
+    "description": "Tratamiento mediante compresión de aire controlado en piernas, abdomen y brazos. Disfruta de un masaje profundo que reactiva la circulación, alivia la pesadez y te ayuda a eliminar toxinas y celulitis.",
+    "longDescription": "La presoterapia es un tratamiento de drenaje linfático mecánico que utiliza un sistema inteligente de presión de aire secuencial. Esta técnica, totalmente indolora y relajante, produce una sensación de ligereza inmediata mientras ayuda a tu organismo a eliminar toxinas de forma natural.",
+    "extraInfo": "Es una terapia altamente versátil y personalizable, ideal tanto para mejorar la estética corporal como para promover tu salud y bienestar diario. La presoterapia trabaja de manera focalizada y está especialmente indicada para:",
+    "sections": [
+      {
+        "title": "Mejora Circulatoria y Retención de Líquidos",
+        "subtitle": "Alivio y Bienestar",
+        "intro": "Reactiva tu sistema circulatorio y despídete de la pesadez:",
+        "items": [
+          {
+            "label": "Alivio y prevención",
+            "description": " Trata eficazmente la mala circulación y es ideal para la prevención y el descanso de las piernas cansadas."
+          },
+          {
+            "label": "Drenaje completo",
+            "description": " Actúa sobre la retención de fluidos, facilitando tanto el drenaje superficial como mejorando la retención linfática externa."
+          },
+          {
+            "label": "Cuidado durante el embarazo",
+            "description": " Es uno de los tratamientos más recomendados y seguros para aliviar la molesta retención de líquidos asociada a la gestación."
+          }
+        ]
+      },
+      {
+        "title": "Tratamiento Anticelulítico y Control de Peso",
+        "subtitle": "Remodelación y Textura",
+        "intro": "Mejora la apariencia de tu piel mientras reduces volumen:",
+        "items": [
+          {
+            "label": "Acción anticelulítica total",
+            "description": " Mejora visiblemente la textura de la piel, trabajando sobre la celulitis edematosa, la celulitis dura y la celulitis blanda."
+          },
+          {
+            "label": "Apoyo integral",
+            "description": " Un complemento perfecto si buscas reducir volumen en procesos de sobrepeso."
+          },
+          {
+            "label": "Mantenimiento perfecto",
+            "description": " Ideal como tratamiento de mantenimiento para prolongar y potenciar los resultados de otras terapias corporales."
+          }
+        ]
+      }
+    ],
     "benefits": [
       "Piernas ligeras",
       "Elimina toxinas",
@@ -133,8 +219,37 @@
   {
     "slug": "terapia-led",
     "title": "Equipo L.E.D.",
-    "description": "Terapia de luz bio-estimulante para tratar el acné, calmar la piel y acelerar la regeneración celular.",
-    "longDescription": "La terapia LED utiliza diferentes longitudes de onda de luz para tratar diversas afecciones cutáneas. La luz azul elimina bacterias del acné, la roja estimula el colágeno y la infrarroja acelera la cicatrización. Tratamiento indoloro y sin efectos secundarios.",
+    "description": "Innovadora fusión de calor y luz bio-estimulante. Emplea la vibración cromática y distintas longitudes de onda para combatir el acné, reducir inflamaciones y renovar tu piel de forma profunda.",
+    "longDescription": "La terapia L.E.D. es un tratamiento innovador que aprovecha el efecto terapéutico de la luz y el calor. A través de diferentes longitudes de onda y su vibración cromática, ofrece una solución integral y personalizada para diversas afecciones cutáneas. Es un procedimiento totalmente indoloro, seguro y sin efectos secundarios que trabaja desde el interior para transformar tu piel.",
+    "extraInfo": "Dependiendo de las necesidades de tu rostro, utilizamos diferentes espectros de luz para lograr resultados específicos:",
+    "sections": [
+      {
+        "title": "Acción Antiacné y Calmante (Luz Azul)",
+        "items": [
+          {
+            "label": "Tratamiento antiacné",
+            "description": " Actúa directamente sobre la epidermis, eliminando eficazmente las bacterias causantes del acné y previniendo futuros brotes."
+          },
+          {
+            "label": "Control de procesos inflamatorios",
+            "description": " Su efecto descongestivo calma la piel, reduciendo las rojeces y aliviando la inflamación asociada a las pieles reactivas o con alteraciones."
+          }
+        ]
+      },
+      {
+        "title": "Rejuvenecimiento y Reparación (Luz Roja e Infrarroja)",
+        "items": [
+          {
+            "label": "Efecto antiedad global",
+            "description": " La luz roja penetra en las capas medias de la piel, estimulando la producción natural de colágeno y elastina para atenuar arrugas y reafirmar el rostro."
+          },
+          {
+            "label": "Poder cicatrizante",
+            "description": " La luz infrarroja alcanza las capas más profundas, acelerando la regeneración celular, reparando los tejidos y favoreciendo una cicatrización rápida y efectiva."
+          }
+        ]
+      }
+    ],
     "benefits": [
       "Tratamiento acné",
       "Calma la piel",
@@ -162,7 +277,44 @@
     "slug": "tratamientos-faciales-corporales",
     "title": "Tratamiento facial y corporal",
     "description": "Rituales personalizados que combinan activos de alta cosmética con técnicas manuales exclusivas.",
-    "longDescription": "Ofrecemos rituales faciales y corporales completamente personalizados según las necesidades de tu piel. Utilizamos cosmética de alta gama y técnicas manuales exclusivas para limpiar, nutrir, hidratar y rejuvenecer. Cada tratamiento incluye diagnóstico previo gratuito.",
+    "longDescription": "Ofrecemos rituales de belleza completamente personalizados, diseñados para responder a las necesidades únicas de tu piel en cada momento. Comenzamos siempre con un diagnóstico previo gratuito para crear un protocolo a tu medida, combinando nuestras técnicas manuales exclusivas con la mejor cosmética de Sothys.",
+    "extraInfo": "Ya sea que busques transformar tu piel o desconectar del día a día, adaptamos cada paso para ofrecerte una experiencia única:",
+    "sections": [
+      {
+        "title": "Cuidado Facial Especializado",
+        "subtitle": "Belleza y Luminosidad",
+        "intro": "Tratamientos faciales diseñados para revelar la mejor versión de tu rostro:",
+        "items": [
+          {
+            "label": "Higiene y Oxigenación",
+            "description": " Limpia los poros en profundidad y oxigena los tejidos para devolverle a la piel su luminosidad natural."
+          },
+          {
+            "label": "Soluciones Específicas",
+            "description": " Abordamos de forma directa y efectiva alteraciones como el acné y la hiperpigmentación (manchas), igualando el tono y calmando la piel."
+          },
+          {
+            "label": "Juventud e Hidratación",
+            "description": " Protocolos intensivos para nutrir, hidratar profundamente y rejuvenecer, atenuando los signos de la edad."
+          }
+        ]
+      },
+      {
+        "title": "Bienestar Corporal y Sensorial",
+        "subtitle": "Cuidado Integral",
+        "intro": "Cuidado integral para tu cuerpo que mima tanto la piel como la mente:",
+        "items": [
+          {
+            "label": "Efecto Antiestrés",
+            "description": " Rituales envolventes y relajantes que liberan la tensión acumulada, aportando un descanso profundo y reparador."
+          },
+          {
+            "label": "Nutrición y Renovación",
+            "description": " Técnicas y productos específicos para nutrir e hidratar el cuerpo, dejando la piel visiblemente más suave, firme y elástica."
+          }
+        ]
+      }
+    ],
     "benefits": [
       "Personalizado",
       "Alta cosmética",
