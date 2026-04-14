@@ -155,16 +155,8 @@
         "answer": "Generalmente se necesitan entre 6 y 8 sesiones para lograr una eliminación permanente del vello, con una separación de 4-6 semanas entre sesiones. El número exacto depende del tipo de vello, la zona tratada y el fototipo de piel."
       },
       {
-        "question": "¿Duele la fotodepilación?",
-        "answer": "La sensación es similar a un pequeño capirotazo. La tecnología de luz pulsada que utilizamos incluye sistemas de refrigeración que hacen el tratamiento muy tolerable. La mayoría de las pacientes no experimentan dolor significativo."
-      },
-      {
         "question": "¿En qué zonas del cuerpo se puede hacer fotodepilación?",
         "answer": "La fotodepilación es apta para todas las zonas del cuerpo: piernas, axilas, ingles, brazos, abdomen, cara (labio superior, patillas, mentón) y espalda. Cada zona se trata con un protocolo específico adaptado al tipo de vello y piel."
-      },
-      {
-        "question": "¿Qué debo hacer antes de una sesión de fotodepilación?",
-        "answer": "Antes de la sesión debes rasurar la zona a tratar 24-48 horas antes, evitar la exposición solar durante las 2 semanas previas, no depilarte con cera ni pinzas en el mes anterior, y llegar sin bronceador ni cremas en la zona a tratar."
       }
     ],
     "imageSrc": "/img/servicios/fotodepilacion.webp"
@@ -396,14 +388,8 @@
     "slug": "manicura",
     "title": "Manicura",
     "description": "Cuidado experto de manos y uñas con las últimas tendencias en esmaltado y máxima higiene.",
-    "longDescription": "Servicio completo de manicura que incluye limado, cutículas, hidratación y esmaltado. Trabajamos con esmaltes de larga duración, semipermanentes y las últimas tendencias en nail art. Máxima higiene y esterilización de todos los utensilios.",
-    "benefits": [
-      "Esmaltado profesional",
-      "Semipermanente",
-      "Nail art",
-      "Máxima higiene",
-      "Hidratación"
-    ],
+    "longDescription": "Servicio completo de manicura que incluye limado, cutículas, hidratación y esmaltado. Máxima higiene y esterilización de todos los utensilios.",
+    "benefits": ["Esmaltado profesional", "Máxima higiene", "Hidratación"],
     "imageSrc": "/img/servicios/manicura.webp"
   },
   {
